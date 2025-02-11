@@ -1,0 +1,21 @@
+﻿<!-- HTML -->
+<div class="container">
+        <!-- Home Screen -->
+        <div class="screen" id="homeScreen">
+                <h1>🦜 Bangalore Bird Quiz</h1>
+                <button onclick="startQuiz()" class="play-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="screen" id="quizScreen" style="display: none;">
+                <div class="header">
+                        <div class="streak">Streak: <span id="streakCounter">0</span></div>
+                        <button onclick="restartQuiz()" class="restart-btn">↻ Restart</button>
+                </div>
+                
+                <h2>Which bird is this?</h2>
+                <audio id="birdAudio" controls></audio>
+                <div class="choices" id="choices"></div>
+                <button onclick="nextQuestion()" class="next-btn" id="nextBtn" disabled>Next Question →</button>
+        </div>
+</div>
